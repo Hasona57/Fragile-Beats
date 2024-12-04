@@ -3,184 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragile Beats - Your Heart's Best Friend</title>
+    <title>Fragile Beats - Your Heart's Guardian</title>
     <style>
-        /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
             color: #333;
-            background-color: #f9f9f9;
         }
 
-        h1, h2, h3 {
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header */
         header {
+            background: #005f73;
+            color: white;
+            padding: 1em 2em;
+            text-align: center;
+        }
+
+        nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background: linear-gradient(45deg, #d32f2f, #880e4f);
-            color: #fff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            justify-content: center;
+            gap: 1em;
+            padding: 1em 0;
         }
 
-        header .logo h1 {
-            font-size: 1.8rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
+        nav a {
+            color: white;
+            text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease;
         }
 
-        nav ul li a:hover {
-            color: #ffccbc;
-        }
-
-        /* Hero Section */
         .hero {
             text-align: center;
-            padding: 3rem 1rem;
-            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
-            color: #fff;
+            padding: 2em;
+            background-color: #94d2bd;
         }
 
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        .hero img {
+            width: 300px;
+            margin-top: 1em;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            color: #fff;
-            background: #d32f2f;
+        .hero button {
+            background-color: #005f73;
+            color: white;
+            padding: 1em 2em;
             border: none;
-            text-decoration: none;
-            font-weight: bold;
             border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            font-size: 1.2em;
         }
 
-        .btn:hover {
-            background: #880e4f;
-            transform: translateY(-2px);
+        .features, .about, .contact {
+            padding: 2em;
+            background-color: #e9d8a6;
         }
 
-        /* Sections */
-        section {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        section h2 {
+        .section-title {
             text-align: center;
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            font-size: 2em;
+            margin-bottom: 1em;
         }
 
-        .product-card {
+        .features-list, .contact-form {
             display: flex;
             flex-direction: column;
+            gap: 1em;
             align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 1.5rem;
-            background: #fff;
-            margin: 1rem 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
         }
 
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .product-card h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .product-card img {
-            max-width: 200px;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-
-        .product-card p {
-            text-align: center;
-        }
-
-        /* Footer */
         footer {
             text-align: center;
-            padding: 1rem;
-            background: #d32f2f;
-            color: #fff;
+            padding: 1em;
+            background-color: #005f73;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Fragile Beats</h1>
-        </div>
+        <h1>Fragile Beats</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#features">Features</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>Protect What Matters Most</h2>
-        <p>Innovative wearable devices for heart health monitoring and safety.</p>
-        <a href="#products" class="btn">Explore Products</a>
+        <h2>Your Heart's Guardian in Every Beat</h2>
+        <p>Monitor your heart health effortlessly.</p>
+        <img src="https://via.placeholder.com/300" alt="Heart Monitor">
+        <br><button>Download Now</button>
     </section>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-card">
-            <img src="/mnt/data/A_sleek,_futuristic_wearable_device_with_a_heart_m.png" alt="LifeRing">
-            <h3>LifeRing</h3>
-            <p>A smart ring that monitors your heart's health and alerts you instantly.</p>
-            <a href="#" class="btn">Learn More</a>
+    <section id="features" class="features">
+        <h3 class="section-title">Features</h3>
+        <div class="features-list">
+            <p>✔ Real-time heart rate monitoring</p>
+            <p>✔ Alerts for irregular readings</p>
+            <p>✔ Historical data tracking</p>
+            <p>✔ Easy sharing with healthcare professionals</p>
         </div>
+    </section>
+
+    <section id="about" class="about">
+        <h3 class="section-title">About Us</h3>
+        <p>Fragile Beats is designed to empower you to take control of your heart health. Our mission is to make heart monitoring accessible and reliable for everyone.</p>
+        <p>We are a team of healthcare and tech enthusiasts, dedicated to making a difference.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h3 class="section-title">Contact Us</h3>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Fragile Beats. All rights reserved.</p>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </p>
     </footer>
 </body>
 </html>
